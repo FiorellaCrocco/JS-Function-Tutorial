@@ -5,9 +5,9 @@ const rapid = (myString) => {
         if(['a','e','i','o','u'].includes(myString[position]) == false)
             consonants.push(myString[position])
     }
-    return consonants.join('');
+    return consonants.join('').toUpperCase();
 }
 
 // From this line up Do not change code below
 let str = "John";
-console.log(rapid(str).toUpperCase());
+console.log(rapid(str));
